@@ -24,6 +24,7 @@ const char* mqtt_password = "Wsl123456789@";
 
 BearSSL::WiFiClientSecure espClient;
 PubSubClient client(espClient);
+
 unsigned long lastMsg = 0;
 #define MSG_BUFFER_SIZE	(50)
 char msg[MSG_BUFFER_SIZE];
